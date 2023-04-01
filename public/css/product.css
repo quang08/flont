@@ -1,0 +1,766 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Pacifico&display=swap");
+html,
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+/* Add some style to the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 1rem;
+}
+
+/* Add some style to the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.alert {
+  width: 95%;
+  background: #036627;
+  padding: 2vw;
+  border-radius: 2vw;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 900;
+  display: none;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.filter_gray {
+  color: rgb(143, 143, 143);
+}
+.filter_green {
+  color: 036627;
+}
+.filter_white {
+  color: white;
+}
+.filter_black {
+  color: black !important;
+}
+
+nav {
+  background-color: transparent;
+  height: 6vw; /* adjust this value to fit your navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.logo a {
+  font-family: "Pacifico", cursive;
+  font-size: 4vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.logo span {
+  font-size: 2vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: black;
+}
+
+.icon-container {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-container i {
+  font-size: 1.5vw;
+}
+
+.cart-icon {
+  width: 2vw; /* Set the same width as the other icons */
+  height: 2vw; /* Set the same height as the other icons */
+}
+
+/* Styles for the shopping cart icon image */
+.cart-icon img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+}
+
+.hero {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 2vw;
+}
+
+.content .size {
+  color: gray;
+  font-size: 2vw;
+}
+
+.content h1 {
+  font-family: "Pacifico", cursive;
+  margin-top: 2vw;
+  font-size: 8vw;
+  color: black;
+  margin-bottom: 2vw;
+  letter-spacing: 0.9vw;
+}
+
+.content p {
+  width: 85%;
+  font-size: 1.7vw;
+  margin-bottom: 2vw;
+  letter-spacing: 0.16vw;
+}
+
+.buttons {
+  width: 80%;
+  display: flex;
+  height: 5vw;
+  gap: 1.6vw;
+}
+
+.buttons button:hover {
+  background-color: #3e8e41;
+}
+
+.buttons button {
+  background-color: #056308;
+  color: white;
+  padding: 1.2vw;
+  border-radius: 4vw;
+  width: 70%;
+  font-size: 2.5vw;
+  letter-spacing: 0.1em;
+  border: none;
+}
+
+.buttons .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #78ab78;
+  color: white;
+  border-radius: 3vw;
+  border: none;
+  width: 20%;
+  font-size: 2.5vw;
+}
+
+.image-wrapper {
+  width: 40%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.image-wrapper-hero {
+  margin-top: 2vw;
+  width: 90%;
+  height: 90%;
+}
+
+.image-wrapper-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.review {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.review-img-wrapper {
+  width: 100%;
+}
+
+.review-img-wrapper img {
+  width: 100%;
+}
+
+/* you may like */
+.you-may-also {
+  padding: 50px 0;
+}
+
+.you-may-also h2 {
+  margin-top: 0;
+  margin-left: 1.7vw;
+  font-size: 1.7vw;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0.5vw;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-container .grid-item {
+  background-color: white;
+  padding: 0.8em;
+  text-align: center;
+  border-radius: 1vw;
+  border: 0.2px solid rgb(185, 184, 184);
+  height: 23vw;
+  width: 19vw;
+  /* font-size: 1em; */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-img {
+  object-fit: fill;
+  width: 100%;
+  height: 60%;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+  height: 25px; /* set a fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-body span {
+  font-weight: bold;
+}
+
+.card-titles h4 {
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.card-titles .desc {
+  margin: 0;
+  padding-top: 0.3vw;
+  text-align: left;
+  font-size: 1vw;
+}
+
+.card-price {
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer span {
+  border-radius: 100%;
+  border: 1px solid rgb(185, 184, 184);
+  height: 2vw;
+  width: 2vw;
+  padding: 0.7vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add-to-cart {
+  background-color: #015f04;
+  color: white;
+  border: none;
+  border-radius: 2vw;
+  padding: 1.3vw;
+  cursor: pointer;
+  width: 11vw;
+  height: 3vw;
+  font-size: 1vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #3e8e41;
+}
+
+/* SECTION 4 */
+.section4 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.section4 .image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  padding: 3vw;
+}
+
+.section4 .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section4 h2 {
+  font-size: 2.5vw;
+  text-align: left;
+  margin-left: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.section4 p {
+  font-size: 1.5vw;
+  text-align: left;
+  color: gray;
+}
+
+.form {
+  margin-top: 5vw;
+  padding: 5vw;
+}
+
+.form-group {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="email"] {
+  padding: 1.5vw;
+  border: none;
+  border-radius: 30px;
+  margin-right: 10px;
+  background-color: rgb(225, 225, 225);
+  width: 60%;
+  font-size: 1.3vw;
+}
+
+button[type="submit"] {
+  background-color: #015f04;
+  color: white;
+  border: none;
+  width: 25%;
+  border-radius: 3vw;
+  cursor: pointer;
+  font-size: 1.5vw;
+  padding: 1.5vw;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.grid-container-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  margin-top: 8vw;
+  max-height: 30vw;
+}
+
+.grid-item {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item p {
+  margin-bottom: 5px;
+  font-size: 1.5vw;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+}
+.left-footer {
+  width: 30%;
+}
+.left-footer img {
+  width: 100%;
+  height: auto;
+}
+.right-footer {
+  width: 70%;
+  margin-top: 3%;
+  padding: 1.5vw;
+}
+.enterEmailForm {
+  display: flex;
+  margin: 3% 0;
+}
+.enterEmailForm input {
+  width: 75%;
+  margin-right: 5%;
+  padding: 2%;
+  background-color: rgb(226, 226, 226);
+  border-radius: 30px;
+  border: none;
+}
+.enterEmailForm button {
+  width: 20%;
+  background-color: #036627;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.enterEmailForm button:active {
+  background-color: rgb(143, 143, 143);
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.optionFooterList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+.optionFooterList .option {
+  width: 40%;
+}
+.optionFooterList .option div {
+  margin: 8% 0;
+  color: rgb(143, 143, 143);
+  font-size: 1.2vw;
+}
+.optionFooterList .option .contact {
+  margin-bottom: 20%;
+  color: rgb(143, 143, 143);
+  font-size: 1.2vw;
+}
+.optionFooterList .option div p {
+  margin-bottom: 3%;
+  color: rgb(143, 143, 143);
+  font-size: 1.2vw;
+}
+.margin_1_b {
+  margin-bottom: 1%;
+}
+.Footer_title {
+  width: 100%;
+  padding: 1% 0;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .cart-icon {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart-icon img {
+    width: 70%; /* Make the image fill the container */
+    height: 70%; /* Make the image fill the container */
+    margin-bottom: 0.3vw;
+  }
+
+  .section3 {
+    text-align: center;
+    padding: 2vw;
+    background-color: white;
+    height: 100%;
+    padding-bottom: 5vw;
+  }
+
+  .section3 h2 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  .section3 p {
+    font-size: 2vw;
+    margin-bottom: 5vw;
+  }
+
+  .section3-best {
+    text-align: center;
+    padding: 2vw;
+    background-color: #f8f7f7;
+    height: 100%;
+    padding-bottom: 5vw;
+  }
+
+  .section3-best h2 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  .section3-best p {
+    font-size: 2vw;
+    margin-bottom: 5vw;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1vw;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grid-container .grid-item {
+    background-color: white;
+    padding: 1.2vw;
+    text-align: center;
+    border-radius: 1vw;
+    border: 0.2px solid rgb(185, 184, 184);
+    height: 30vw;
+    width: 25vw;
+    /* font-size: 1em; */
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .card-img {
+    object-fit: fill;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .card-body {
+    padding: 1vw;
+    height: 2vw; /* set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-body span {
+    font-weight: bold;
+  }
+
+  .card-titles h4 {
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .card-titles .desc {
+    margin: 0;
+    padding-top: 0.3vw;
+    text-align: left;
+    font-size: 1vw;
+  }
+
+  .card-price {
+    font-size: 1.2vw;
+    margin: 0;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-footer span {
+    border-radius: 100%;
+    border: 1px solid rgb(185, 184, 184);
+    height: 2vw;
+    width: 2vw;
+    padding: 0.7vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78ab78;
+    color: white;
+    border-radius: 3vw;
+    border: none;
+    width: 20%;
+    font-size: 0.1vw;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+  }
+  .left-footer {
+    width: 30%;
+  }
+  .left-footer img {
+    width: 100%;
+    height: auto;
+  }
+  .right-footer {
+    width: 70%;
+    margin-top: 3%;
+  }
+
+  .right-footer h1 {
+    font-size: 2.5vw;
+  }
+  .enterEmailForm {
+    display: flex;
+    margin: 3% 0;
+  }
+  .enterEmailForm input {
+    width: 75%;
+    margin-right: 5%;
+    padding: 2%;
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    border: none;
+  }
+  .enterEmailForm button {
+    width: 20%;
+    background-color: #036627;
+    color: white;
+    border-radius: 30px;
+    border: none;
+  }
+  .enterEmailForm button:active {
+    background-color: rgb(143, 143, 143);
+    color: white;
+    border-radius: 30px;
+    border: none;
+  }
+  .optionFooterList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+  }
+  .optionFooterList .option {
+    width: 40%;
+  }
+  .optionFooterList .option div {
+    margin: 8% 0;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
+  }
+  .optionFooterList .option .contact {
+    margin-bottom: 20%;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
+  }
+  .optionFooterList .option div p {
+    margin-bottom: 3%;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
+  }
+  .margin_1_b {
+    margin-bottom: 1%;
+  }
+  .Footer_title {
+    width: 100%;
+    padding: 1% 0;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  .medium-title {
+    font-size: 1.2vw;
+  }
+}
