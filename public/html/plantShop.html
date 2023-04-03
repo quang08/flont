@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/plantCare.css" />
+    <link rel="stylesheet" href="../css/plantShop.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -24,10 +24,10 @@
           >
           <li class="linkHover"><a href="">Deals</a></li>
           <li class="linkHover">
-            <a href="../html/plantShop.html">Plant Shop</a>
+            <a class="filter_green bold" href="../html/plantShop.html">Plant Shop</a>
           </li>
           <li class="linkHover">
-            <a class="bold filter_green" href="">Plant Care</a>
+            <a href="../html/plantCare.html">Plant Care</a>
           </li>
           <li class="linkHover">
             <a href="../html/homeAndDecor.html">Home and Decor</a>
@@ -52,8 +52,8 @@
         >
         <ul class="first_nav">
           <li class="linkHover">Deals</li>
-          <li class="linkHover">Plant Shop</li>
-          <li class="linkHover"><a class="filter_green bold" href="./plantCare.html">Plant Care</a></li>
+          <li class="linkHover filter_green bold">Plant Shop</a></li>
+          <li class="linkHover"><a href="./plantCare.html">Plant Care</a></li>
           <li class="linkHover">
             <a href="./homeAndDecor.html">Home and Decor</a>
           </li>
@@ -69,165 +69,209 @@
       </div>
       <div id="Content">
         <div id="left-content">
-          <div class="filterOption">
-            <div
-              class="filter-title textPaci justity_center align_center sub-title addToCart filter_button"
-              id="filter_button_1"
-              onclick="{filterAction(0,'filter_button_arrow_1','filter_content_1')}"
-            >
-              Plant Tool<span
-                id="filter_button_arrow_1"
-                class="bi bi-chevron-up title rotate180"
-              ></span>
-            </div>
-            <div class="filter_content" id="filter_content_1">
-              <div class="sub_addToCart filterButton">Gloves</div>
-              <div class="sub_addToCart filterButton">
-                Pruning Shears & Loppers
+          <div class="filter">
+            <div class="filter-title textPaci title">Product Categories</div>
+            <div class="filter-form">
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_1" />
+                <label for="filter_1">All Potterd Plants</label>
+                <span>(1024)</span>
               </div>
-              <div class="sub_addToCart filterButton">
-                Forks & Hand Trowel & Spade
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_2" />
+                <label for="filter_2">New Arrivals</label>
+                <span>(215)</span>
               </div>
-              <div class="sub_addToCart filterButton">Spray Bottle/Mister</div>
-              <div class="sub_addToCart filterButton">Watering Can</div>
-              <div class="sub_addToCart filterButton">
-                Grow Tent & Grow Lights
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_3" />
+                <label for="filter_3">Pet_Friendly Plants</label>
+                <span>(141)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_4" />
+                <label for="filter_4">Tropical Indoor Plants</label>
+                <span>(123)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_5" />
+                <label for="filter_5">Flowering plants</label>
+                <span>(56)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_6" />
+                <label for="filter_6">Trailing plants</label>
+                <span>(72)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_7" />
+                <label for="filter_7">Rare Plants</label>
+                <span>(42)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_8" />
+                <label for="filter_8">Bundles</label>
+                <span>(52)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_9" />
+                <label for="filter_9">Pre Potted</label>
+                <span>(28)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_10" />
+                <label for="filter_10">Succulents & Cacti</label>
+                <span>(47)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_11" />
+                <label for="filter_11">Aquatic Plants</label>
+                <span>(38)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_12" />
+                <label for="filter_12">Outdoor Plants</label>
+                <span>(87)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_13" />
+                <label for="filter_13">Vegetable & Herb Plants</label>
+                <span>(69)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_14" />
+                <label for="filter_14">Dried Plants</label>
+                <span>(74)</span>
               </div>
             </div>
           </div>
-          <div class="filterOption">
-            <div
-              class="filter-title textPaci justity_center algin_center sub-title addToCart filter_button"
-              id="filter_button_2"
-              onclick="{filterAction(1,'filter_button_arrow_2','filter_content_2')}"
-            >
-              Mordern Tool<span
-                id="filter_button_arrow_2"
-                class="bi bi-chevron-up title rotate180"
-              ></span>
-            </div>
-            <div class="filter_content" id="filter_content_2">
-              <div class="sub_addToCart filterButton">Label Marker</div>
-              <div class="sub_addToCart filterButton">Wi-fi Plant Sensor</div>
-              <div class="sub_addToCart filterButton">
-                Dehumidifier & Humidity Tray
+          <div class="filter">
+            <div class="filter-title textPaci title">Color</div>
+            <div class="filter-form">
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_15" />
+                <label for="filter_15">Green</label>
+                <span>(1132)</span>
               </div>
-              <div class="sub_addToCart filterButton">
-                Heat Mats & Soil Test Kit
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_16" />
+                <label for="filter_16">Blue</label>
+                <span>(73)</span>
               </div>
-              <div class="sub_addToCart filterButton">
-                Moisture Sensor Meter
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_17" />
+                <label for="filter_17">Purple</label>
+                <span>(141)</span>
               </div>
-              <div class="sub_addToCart filterButton">Oscillating Fan</div>
-              <div class="sub_addToCart filterButton">Water Test Kit</div>
-            </div>
-          </div>
-          <div class="filterOption">
-            <div
-              class="filter-title textPaci justity_center algin_center sub-title addToCart filter_button"
-              id="filter_button_3"
-              onclick="{filterAction(2,'filter_button_arrow_3','filter_content_3')}"
-            >
-              Functional Products<span
-                id="filter_button_arrow_3"
-                class="bi bi-chevron-up title rotate180"
-              ></span>
-            </div>
-            <div class="filter_content" id="filter_content_3">
-              <div class="sub_addToCart filterButton">
-                Fertilizers & water-solubale
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_18" />
+                <label for="filter_18">Red</label>
+                <span>(57)</span>
               </div>
-              <div class="sub_addToCart filterButton">
-                Neem Oil & Potting Soil
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_19" />
+                <label for="filter_19">Yellow</label>
+                <span>(96)</span>
               </div>
-              <div class="sub_addToCart filterButton">
-                Cottion Swabs & Rubbing Alcohol
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_20" />
+                <label for="filter_20">Orange</label>
+                <span>(48)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_21" />
+                <label for="filter_21">Pink</label>
+                <span>(79)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_22" />
+                <label for="filter_22">White</label>
+                <span>(63)</span>
               </div>
             </div>
           </div>
-          <div class="filterOption" id="filter_option_4">
-            <div
-              class="filter-title textPaci justity_center algin_center sub-title addToCart filter_button"
-              id="filter_button_4"
-              onclick="{filterAction(3,'filter_button_arrow_4','filter_content_4')}"
-            >
-              Filter<span
-                id="filter_button_arrow_4"
-                class="bi bi-chevron-up title rotate180"
-              ></span>
-            </div>
-            <div class="filter_content" id="filter_content_4">
-              <div class="filter">
-                <div class="filter-title textPaci title">Color</div>
-                <div class="filter-form">
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_15" />
-                    <label for="filter_15">Green</label>
-                    <span>(532)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_16" />
-                    <label for="filter_16">Blue</label>
-                    <span>(23)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_17" />
-                    <label for="filter_17">Purple</label>
-                    <span>(13)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_18" />
-                    <label for="filter_18">Red</label>
-                    <span>(12)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_19" />
-                    <label for="filter_19">Yellow</label>
-                    <span>(35)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_20" />
-                    <label for="filter_20">Orange</label>
-                    <span>(48)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_21" />
-                    <label for="filter_21">Pink</label>
-                    <span>(12)</span>
-                  </div>
-                  <div class="filter-form-input">
-                    <input type="checkbox" id="filter_22" />
-                    <label for="filter_22">White</label>
-                    <span>(422)</span>
-                  </div>
-                </div>
+          <div class="filter">
+            <div class="filter-title textPaci title">Filter of price</div>
+            <div class="filter-form">
+              <input type="range" class="inputRange" />
+              <div>
+                <label for="inputRange">Price: $20 - $1000</label
+                ><button class="inputRange_button">Filter</button>
               </div>
-              <div class="filter">
-                <div class="filter-title textPaci title">Filter of price</div>
-                <div class="filter-form">
-                  <input
-                    type="range"
-                    class="inputRange"
-                    min="3"
-                    max="300"
-                    step="1"
-                  />
-                  <div>
-                    <label for="inputRange">Price: $3 - $300</label
-                    ><button class="inputRange_button">Filter</button>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="filter-title textPaci title">Zodiac Houseplants</div>
+            <div class="filter-form">
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_23" />
+                <label for="filter_23">Capricorn</label>
+                <span>(24)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_24" />
+                <label for="filter_24">Aquarius</label>
+                <span>(18)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_25" />
+                <label for="filter_25">Pisces</label>
+                <span>(16)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_26" />
+                <label for="filter_26">Aries</label>
+                <span>(22)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_27" />
+                <label for="filter_27">Taurus</label>
+                <span>(13)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_28" />
+                <label for="filter_28">Gemini</label>
+                <span>(17)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_29" />
+                <label for="filter_29">Cancer</label>
+                <span>(21)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_30" />
+                <label for="filter_30">Leo</label>
+                <span>(14)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_31" />
+                <label for="filter_31">Virgo</label>
+                <span>(22)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_32" />
+                <label for="filter_32">Libra</label>
+                <span>(20)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_33" />
+                <label for="filter_33">Scorpio</label>
+                <span>(25)</span>
+              </div>
+              <div class="filter-form-input">
+                <input type="checkbox" id="filter_34" />
+                <label for="filter_34">Sagittarius</label>
+                <span>(16)</span>
               </div>
             </div>
           </div>
         </div>
-        <div id="right-content">
+        <div class="right-content">
           <div class="right-content_header filter_white">
             <div class="sub-title">Want more?</div>
-            <div class="xx_large_title bold">Plant Care</div>
+            <div class="xx_large_title bold">Plant Store</div>
             <div class="sm-title">
               Home
-              <span class="sm-title"> | Plant Care</span>
+              <span class="sm-title filter_green"> | Plant Shop</span>
             </div>
           </div>
           <div class="right-content_filter">
@@ -262,13 +306,13 @@
           </div>
           <div class="product-list">
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product1.png" />
+              <img src="../static/product_list/product_1.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Radish gloves</div>
-                  <div>White - Red</div>
+                  <div class="bold sub-title">Peace lily</div>
+                  <div>Sathiphyllum wallisii</div>
                 </div>
-                <div class="bold sub-title">$10.10</div>
+                <div class="bold sub-title">$110.1</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -278,13 +322,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product2.png" />
+              <img src="../static/product_list/product_2.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Pruning Shears</div>
-                  <div>Spike</div>
+                  <div class="bold sub-title">Rubber Plants</div>
+                  <div>Ficus elastica</div>
                 </div>
-                <div class="bold sub-title">$17.52</div>
+                <div class="bold sub-title">$77.52</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -294,13 +338,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product3.png" />
+              <img src="../static/product_list/product_3.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Spray Bottle</div>
-                  <div>Glass</div>
+                  <div class="bold sub-title">Elephant Ear Plants</div>
+                  <div>Colocasia</div>
                 </div>
-                <div class="bold sub-title">$12.16</div>
+                <div class="bold sub-title">$121.6</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -310,13 +354,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product4.png" />
+              <img src="../static/product_list/product_4.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Teapot Can</div>
-                  <div>Black</div>
+                  <div class="bold sub-title">Snake Plants</div>
+                  <div>Sansevieria trifasciata</div>
                 </div>
-                <div class="bold sub-title">$35.20</div>
+                <div class="bold sub-title">$65.20</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -326,13 +370,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product5.png" />
+              <img src="../static/product_list/product_5.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Humidity Tray</div>
-                  <div>White</div>
+                  <div class="bold sub-title">Paddle Plant</div>
+                  <div>Kalanchoe thyrsiflora</div>
                 </div>
-                <div class="bold sub-title">$29.32</div>
+                <div class="bold sub-title">$45.32</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -342,13 +386,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product6.png" />
+              <img src="../static/product_list/product_6.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Watering Can</div>
-                  <div>Rose Gold</div>
+                  <div class="bold sub-title">African Violet</div>
+                  <div>Gesneriaceae</div>
                 </div>
-                <div class="bold sub-title">$37.72</div>
+                <div class="bold sub-title">$57.72</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -358,13 +402,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product7.png" />
+              <img src="../static/product_list/product_7.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Fork</div>
-                  <div>Inox</div>
+                  <div class="bold sub-title">Ferns</div>
+                  <div>Vascular plants</div>
                 </div>
-                <div class="bold sub-title">$19.80</div>
+                <div class="bold sub-title">$69.80</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -374,13 +418,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product8.png" />
+              <img src="../static/product_list/product_8.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Glass Can</div>
-                  <div>Yellow</div>
+                  <div class="bold sub-title">English Ivy</div>
+                  <div>Hedera helix</div>
                 </div>
-                <div class="bold sub-title">$25.52</div>
+                <div class="bold sub-title">$45.52</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -390,13 +434,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product9.png" />
+              <img src="../static/product_list/product_9.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Bee gloves</div>
-                  <div>White - Yellow</div>
+                  <div class="bold sub-title">Bromeliads</div>
+                  <div>Monocot flowering plants</div>
                 </div>
-                <div class="bold sub-title">$15.90</div>
+                <div class="bold sub-title">$25.90</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -406,13 +450,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product10.png" />
+              <img src="../static/product_list/product_10.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Grow Light</div>
-                  <div>Plastic</div>
+                  <div class="bold sub-title">Juniper Bonsai</div>
+                  <div>Cupressaceae</div>
                 </div>
-                <div class="bold sub-title">$23.01</div>
+                <div class="bold sub-title">$385.1</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -422,13 +466,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product11.png" />
+              <img src="../static/product_list/product_11.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Pruning Shears</div>
-                  <div>Orange</div>
+                  <div class="bold sub-title">Citrus Tree</div>
+                  <div>Rutaceae</div>
                 </div>
-                <div class="bold sub-title">$11.22</div>
+                <div class="bold sub-title">$112.2</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title">Add to Cart</button>
@@ -438,13 +482,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product12.png" />
+              <img src="../static/product_list/product_12.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Spray Bottle</div>
-                  <div>Plastic</div>
+                  <div class="bold sub-title">String Of Pearls</div>
+                  <div>Asteraceae</div>
                 </div>
-                <div class="bold sub-title">$21.52</div>
+                <div class="bold sub-title">$79.52</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title medium-title">
@@ -456,13 +500,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product13.png" />
+              <img src="../static/product_list/product_13.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Spray Bottle</div>
-                  <div>Mirror</div>
+                  <div class="bold sub-title">Pilea</div>
+                  <div>Peperomioides</div>
                 </div>
-                <div class="bold sub-title">$12.10</div>
+                <div class="bold sub-title">$85.10</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title medium-title">
@@ -474,13 +518,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product14.png" />
+              <img src="../static/product_list/product_14.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Trowel</div>
-                  <div>Brown</div>
+                  <div class="bold sub-title">Monstera</div>
+                  <div>Arum family</div>
                 </div>
-                <div class="bold sub-title">$10.32</div>
+                <div class="bold sub-title">$95.90</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title medium-title">
@@ -492,13 +536,13 @@
               </div>
             </div>
             <div class="product-detail">
-              <img src="../static/product_plan_care_list/product15.png" />
+              <img src="../static/product_list/product_15.png" />
               <div class="product-infor">
                 <div class="product-des">
-                  <div class="bold sub-title">Rubbing Alcohol</div>
-                  <div>Transparent</div>
+                  <div class="bold sub-title">Sweetheart Plant</div>
+                  <div>Valentine Hoya</div>
                 </div>
-                <div class="bold sub-title">$17.82</div>
+                <div class="bold sub-title">$47.82</div>
               </div>
               <div class="product-action">
                 <button class="addToCart weight-600-title medium-title">
@@ -510,7 +554,7 @@
               </div>
             </div>
           </div>
-          <button class="showMoreButton medium-title bold margin_auto">
+          <button class="showMoreButton medium-title bold justity_center">
             Show more
           </button>
         </div>
@@ -576,7 +620,8 @@
         Powered by Shopify
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../firebase.js"></script>
   </body>
-  <script src="./firebase.js"></script>
-  <script src="../script.js"></script>
 </html>

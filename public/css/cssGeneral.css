@@ -42,7 +42,7 @@ a {
   font-family: Pacifico;
 }
 .xx_large_title {
-  font-size: 3vw;
+  font-size: 3rem;
 }
 .title {
   font-size: x-large;
@@ -84,12 +84,14 @@ a {
 .filter_black {
   color: black !important;
 }
-
-.linkHover:hover {
+.linkHover a {
+  text-decoration: none;
+  color: black;
+}
+.linkHover a:hover {
   color: var(--main-green-color);
   font-weight: bold;
 }
-
 .container {
   margin: 0 5%;
 }
@@ -369,7 +371,7 @@ a {
   .sub-title {
     font-size: small;
   }
-
+  
   #header {
     display: none;
   }
@@ -494,7 +496,7 @@ a {
   .sub-title {
     font-size: small;
   }
-
+ 
   #header {
     display: none;
     background-color: var(--main-text-color);
@@ -720,33 +722,4 @@ input[type="range"]:focus::-ms-fill-lower {
 }
 input[type="range"]:focus::-ms-fill-upper {
   background: #036627;
-}
-
-.right-content_header {
-  background-image: linear-gradient(#514d4db4, #514d4db4),
-    url("../static/titleImage/titleImageForPlantCare.png");
-  background-size: 100% 100%;
-}
-.filterOption {
-  margin: 5% 0;
-}
-.filter_button {
-  transition: transform 0.2s;
-}
-.filter_button:hover {
-  transform: scale(1.08);
-}
-.rotate180 {
-  margin-left: 5%;
-}
-
-.filterButton {
-  width: fit-content;
-  margin: 6% 0;
-}
-.filter_content {
-  display: none;
-}
-#filter_option_4 {
-  margin-bottom: 60%;
 }

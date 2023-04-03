@@ -21,16 +21,18 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
-//reference to db
+//create db and reference to db
 const formDB = firebase.database().ref("contact");
 
-document.getElementById('form').addEventListener('submit', submitForm);
+//listen for submit in form
+document.getElementById("form").addEventListener("submit", submitForm);
 
-function submitForm (e) {
+function submitForm(e) {
   e.preventDefault();
   let emailInput = getElementValue("emailInput");
-  saveInfo(emailInput);
-  //   enable alert
+  saveInfo(emailInput); //save to firebase
+
+  //   enable alertSuccess
   document.querySelector(".alert").style.display = "block";
   //   remove the alert
   setTimeout(() => {
@@ -40,36 +42,15 @@ function submitForm (e) {
   document.getElementById("form").reset();
 }
 
+//save info to firebase
 const saveInfo = (email) => {
-   let newForm = formDB.push();
-   newForm.set({
+  let newForm = formDB.push();
+  newForm.set({
     email: email,
-   })
-}
+  });
+};
 
 const getElementValue = (id) => {
   return document.getElementById(id).value;
-}
+};
 
-// const email = document.getElementById("emailInput");
-// const form = document.getElementById("form");
-
-// form.addEventListener("submit", (e) => {
-//   let messages = [];
-//   if (email.value === "" || email.value == null) {
-//     messages.push("Field is required");
-//   }
-
-//   if (messages.length > 0) {
-//     e.preventDefault();
-//     errorElement.innerText = messages.join(", ");
-//   }
-// });
-
-function success() {
-  if (document.getElementById("emailInput").value === "") {
-    document.getElementById("button").disabled = true;
-  } else {
-    document.getElementById("button").disabled = false;
-  }
-}

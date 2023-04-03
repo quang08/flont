@@ -16,7 +16,6 @@ body {
 :root {
   --main-text-color: white;
   --main-green-color: #036627;
-  --sub-main-green-color: #bdd4c6;
   --main-gray-color: rgb(143, 143, 143);
 }
 
@@ -41,6 +40,7 @@ a {
 .textPaci {
   font-family: Pacifico;
 }
+
 .xx_large_title {
   font-size: 3vw;
 }
@@ -65,10 +65,6 @@ a {
 }
 .justity_center {
   display: flex;
-  justify-content: center;
-}
-.margin_auto {
-  display: flex;
   margin: auto;
 }
 
@@ -84,12 +80,10 @@ a {
 .filter_black {
   color: black !important;
 }
-
 .linkHover:hover {
   color: var(--main-green-color);
   font-weight: bold;
 }
-
 .container {
   margin: 0 5%;
 }
@@ -104,6 +98,7 @@ a {
   width: 100%;
   padding: 1% 0;
   text-align: center;
+  font-size: 1.5vw;
 }
 #header {
   display: flex;
@@ -127,6 +122,19 @@ a {
   width: 20%;
   margin-right: 5%;
 }
+.right-content {
+  width: 75%;
+}
+.right-content_header {
+  background-image: url("../static/Rectangle\ 119.png");
+  background-size: auto 100%;
+  width: 80%;
+  padding: 10% 10% 3% 10%;
+}
+.sm-title {
+  margin-top: 13%;
+  font-weight: 500;
+}
 .filter {
   margin-bottom: 3%;
 }
@@ -147,18 +155,6 @@ a {
   position: absolute;
   right: 0;
 }
-#right-content {
-  width: 75%;
-}
-.right-content_header {
-  width: 80%;
-  padding: 10% 10% 3% 10%;
-}
-.sm-title {
-  margin-top: 13%;
-  font-weight: 500;
-}
-
 .right-content_filter {
   margin: 3% 0;
 }
@@ -215,11 +211,12 @@ a {
   padding: 4.5%;
   border-radius: 15px;
   margin-bottom: 15%;
-  transition: transform 0.3s;
 }
+
 .product-detail:hover {
   transform: scale(1.08);
 }
+
 .product-detail img {
   width: 100%;
   height: auto;
@@ -244,21 +241,7 @@ a {
   border-radius: 30px;
   border: none;
 }
-.sub_addToCart {
-  background-color: var(--sub-main-green-color);
-  padding: 3% 10%;
-  color: black;
-  border-radius: 30px;
-  border: none;
-}
 .addToCart:active {
-  background-color: var(--main-gray-color);
-}
-.sub_addToCart:hover {
-  background-color: var(--main-green-color) !important;
-  color: var(--main-text-color);
-}
-.sub_addToCart:active {
   background-color: var(--main-gray-color);
 }
 .markButton {
@@ -285,6 +268,7 @@ a {
   border-radius: 30px;
   border: none;
 }
+
 .footer {
   width: 100%;
   display: flex;
@@ -333,23 +317,22 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 8%;
 }
-
 .optionFooterList .option {
   width: 60%;
 }
 .optionFooterList .option div {
   margin: 8% 0;
-  color: var(--main-gray-color);
+  color: rgb(143, 143, 143);
   font-size: 1.2vw;
 }
 .optionFooterList .option .contact {
   margin-bottom: 20%;
-  color: var(--main-gray-color);
+  color: rgb(143, 143, 143);
   font-size: 1.2vw;
 }
 .optionFooterList .option div p {
   margin-bottom: 3%;
-  color: var(--main-gray-color);
+  color: rgb(143, 143, 143);
   font-size: 1.2vw;
 }
 .margin_1_b {
@@ -358,7 +341,7 @@ a {
 @media only screen and (max-width: 1000px) {
   * {
     margin: 0;
-    font-size: small;
+    font-size: 10px;
   }
   .xx_large_title {
     font-size: 2rem;
@@ -409,14 +392,12 @@ a {
     scroll-behavior: smooth;
     overflow: scroll;
     height: 100%;
-    padding: 0% 3% 5% 3%;
-    margin-bottom: 5%;
-    z-index: 1000;
+    padding: 0% 3% 3% 1%;
   }
   #filter_icon {
     display: block;
   }
-  #right-content {
+  .right-content {
     width: 100%;
   }
   .right-content_header {
@@ -449,6 +430,12 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 3%;
   }
+  .product-detail {
+    border: 1px solid gray;
+    padding: 4.5%;
+    border-radius: 15px;
+    margin-bottom: 15%;
+  }
   .optionFooterList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -458,18 +445,18 @@ a {
     margin-bottom: 5%;
   }
   .optionFooterList .option div {
-    margin: 5% 0;
-    color: var(--main-gray-color);
+    margin: 8% 0;
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .optionFooterList .option .contact {
     margin-bottom: 20%;
-    color: var(--main-gray-color);
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .optionFooterList .option div p {
     margin-bottom: 3%;
-    color: var(--main-gray-color);
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .enterEmailForm button {
@@ -534,14 +521,12 @@ a {
     scroll-behavior: smooth;
     overflow: scroll;
     height: 100%;
-    padding: 0% 3% 5% 3%;
-    margin-bottom: 5%;
-    z-index: 1000;
+    padding: 0% 3% 3% 1%;
   }
   #filter_icon {
     display: block;
   }
-  #right-content {
+  .right-content {
     width: 100%;
   }
   .right-content_header {
@@ -575,14 +560,12 @@ a {
     grid-template-columns: 1fr 1fr;
     gap: 0 3%;
   }
-
   .product-detail {
     border: 1px solid gray;
     padding: 4.5%;
     border-radius: 15px;
     margin-bottom: 15%;
   }
-
   .optionFooterList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -592,18 +575,18 @@ a {
     margin-bottom: 5%;
   }
   .optionFooterList .option div {
-    margin: 5% 0;
-    color: var(--main-gray-color);
+    margin: 8% 0;
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .optionFooterList .option .contact {
     margin-bottom: 20%;
-    color: var(--main-gray-color);
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .optionFooterList .option div p {
     margin-bottom: 3%;
-    color: var(--main-gray-color);
+    color: rgb(143, 143, 143);
     font-size: 1.2vw;
   }
   .enterEmailForm button {
@@ -720,33 +703,4 @@ input[type="range"]:focus::-ms-fill-lower {
 }
 input[type="range"]:focus::-ms-fill-upper {
   background: #036627;
-}
-
-.right-content_header {
-  background-image: linear-gradient(#514d4db4, #514d4db4),
-    url("../static/titleImage/titleImageForPlantCare.png");
-  background-size: 100% 100%;
-}
-.filterOption {
-  margin: 5% 0;
-}
-.filter_button {
-  transition: transform 0.2s;
-}
-.filter_button:hover {
-  transform: scale(1.08);
-}
-.rotate180 {
-  margin-left: 5%;
-}
-
-.filterButton {
-  width: fit-content;
-  margin: 6% 0;
-}
-.filter_content {
-  display: none;
-}
-#filter_option_4 {
-  margin-bottom: 60%;
 }
