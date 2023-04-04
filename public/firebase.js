@@ -32,6 +32,9 @@ function submitForm(e) {
   let emailInput = getElementValue("emailInput");
   saveInfo(emailInput); //save to firebase
 
+  // set the value of the email span
+  document.getElementById("email").textContent = emailInput;
+
   //   enable alertSuccess
   document.querySelector(".alert").style.display = "block";
   //   remove the alert
