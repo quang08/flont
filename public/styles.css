@@ -381,6 +381,15 @@ a {
   text-align: left;
   margin-bottom: 0.5vw;
 }
+
+.product-des .plant-title {
+  font-size: 1.5vw;
+}
+
+.product-des .plant-des {
+  font-size: 1.2vw;
+}
+
 .product-action {
   display: flex;
   justify-content: space-between;
@@ -960,6 +969,14 @@ a {
     padding: 4.5%;
     border-radius: 15px;
     margin-bottom: 15%;
+  }
+
+  .product-des .plant-title {
+    font-size: 3vw;
+  }
+
+  .product-des .plant-des {
+    font-size: 2vw;
   }
 
   .section4 .image {
