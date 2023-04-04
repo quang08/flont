@@ -9,84 +9,134 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <div class="container">
-      <div class="landing">
-        <div id="header">
-          <ul>
-            <a href="./index.html"
-              ><li class="textPaci xx_large_title filter_white">Flont</li></a
-            >
-            <li class="linkHover"><a class="filter_white" href="">Deals</a></li>
-            <li class="linkHover">
-              <a class="filter_white" href="./html/plantShop.html"
-                >Plant Shop</a
-              >
-            </li>
-            <li class="linkHover">
-              <a class="filter_white" href="./html/plantCare.html"
-                >Plant Care</a
-              >
-            </li>
-            <li class="linkHover">
-              <a class="filter_white" href="./html/homeAndDecor.html"
-                >Home and Decor</a
-              >
-            </li>
-            <li class="linkHover">
-              <a class="filter_white" href="">Blog</a>
-            </li>
-            <li class="linkHover">
-              <a class="filter_white" href="">About us</a>
-            </li>
-          </ul>
-          <ul>
-            <li class="linkHover"><i class="bi bi-cart3 sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-search sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-heart sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-person sub-title"></i></li>
-          </ul>
-        </div>
-        <div id="header_phone">
-          <a class="filter_white" href="./index.html"
-            ><div class="textPaci xx_large_title">Flont</div></a
+    <div id="header_phone">
+      <a class="filter_white" href="./index.html"
+        ><div class="textPaci xx_large_title">Flont</div></a
+      >
+      <ul class="first_nav">
+        <li class="linkHover sub-title">Deals</li>
+        <li class="linkHover">
+          <a class="filter_white sub-title" href="./html/plantShop.html"
+            >Plant Shop</a
           >
-          <ul class="first_nav">
-            <li class="linkHover sub-title">Deals</li>
-            <li class="linkHover">
-              <a class="filter_white sub-title" href="./html/plantShop.html"
-                >Plant Shop</a
-              >
-            </li>
-            <li class="linkHover">
-              <a
-                class="filter_white sub-title"
-                class="filter_green bold"
-                href="./html/plantCare.html"
-                >Plant Care</a
-              >
-            </li>
-            <li class="linkHover">
-              <a class="filter_white sub-title" href="./html/homeAndDecor.html"
-                >Home and Decor</a
-              >
-            </li>
-            <li class="linkHover sub-title">Blog</li>
-            <li class="linkHover sub-title">About us</li>
-          </ul>
-          <ul class="second_nav">
-            <li class="linkHover"><i class="bi bi-cart3 sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-search sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-heart sub-title"></i></li>
-            <li class="linkHover"><i class="bi bi-person sub-title"></i></li>
-          </ul>
+        </li>
+        <li class="linkHover">
+          <a
+            class="filter_white sub-title"
+            class="filter_green bold"
+            href="./html/plantCare.html"
+            >Plant Care</a
+          >
+        </li>
+        <li class="linkHover">
+          <a class="filter_white sub-title" href="./html/homeAndDecor.html"
+            >Home and Decor</a
+          >
+        </li>
+        <li class="linkHover sub-title">Blog</li>
+        <li class="linkHover sub-title">About us</li>
+      </ul>
+      <ul class="second_nav">
+        <li class="linkHover"><i class="bi bi-cart3 sub-title"></i></li>
+        <li class="linkHover"><i class="bi bi-search sub-title"></i></li>
+        <li class="linkHover"><i class="bi bi-heart sub-title"></i></li>
+        <li class="linkHover"><i class="bi bi-person sub-title"></i></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div id="header">
+        <ul>
+          <a href="./index.html"
+            ><li class="textPaci xx_large_title filter_white">Flont</li></a
+          >
+          <li class="linkHover"><a class="filter_white" href="">Deals</a></li>
+          <li class="linkHover">
+            <a class="filter_white" href="./html/plantShop.html">Plant Shop</a>
+          </li>
+          <li class="linkHover">
+            <a class="filter_white" href="./html/plantCare.html">Plant Care</a>
+          </li>
+          <li class="linkHover">
+            <a class="filter_white" href="./html/homeAndDecor.html"
+              >Home and Decor</a
+            >
+          </li>
+          <li class="linkHover">
+            <a class="filter_white" href="">Blog</a>
+          </li>
+          <li class="linkHover">
+            <a class="filter_white" href="">About us</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="linkHover"><i class="bi bi-cart3"></i></li>
+          <li class="linkHover"><i class="bi bi-search"></i></li>
+          <li class="linkHover"><i class="bi bi-heart"></i></li>
+          <li class="linkHover"><i class="bi bi-person"></i></li>
+        </ul>
+      </div>
+      
+      <div class="carousel" data-carousel>
+        <div class="carousel-buttons">
+          <button
+            class="carousel-button carousel-button_previous"
+            data-carousel-button-previous
+          >
+            <span class="bi bi-chevron-left algin_center justity_center"></span>
+          </button>
+          <button
+            class="carousel-button carousel-button_next"
+            data-carousel-button-next
+          >
+            <span
+              class="bi bi-chevron-right algin_center justity_center"
+            ></span>
+          </button>
         </div>
-
-        <div class="hero">
-          <h1>Welcome to Flont</h1>
-          <p>Planting Maintenance Services</p>
+        <div class="slides" data-carousel-slides-container>
+          <div class="slide">
+            <img src="./static/carousel/image1.png" alt="First slide" />
+            <div class="carousel-caption">
+              <div class="xxx_large_title textPaci justity_center">
+                Welcome to Flont
+              </div>
+              <div class="title justity_center">
+                Planting Maintenance Services
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./static/carousel/image2.png" alt="Second slide" />
+            <div class="carousel-caption">
+              <div class="title justity_center">
+                Bring Freshness To Your Architecture
+              </div>
+              <div class="xxx_large_title bold justity_center">
+                PLANT FOR INTERIOR
+              </div>
+              <button class="shopNowbutton weight-600-title margin_auto">
+                Shop now
+              </button>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./static/carousel/image3.png" alt="Third slide" />
+            <div class="carousel-caption">
+              <div class="xxx_large_title bold">DECOR WITH FLONT</div>
+              <p>Get 15% off on order above 400%</p>
+              <button class="shopNowbutton weight-600-title">Shop now</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -543,7 +593,9 @@
           </div>
 
           <!-- <div class="alert" id="alert">Your information has been sent</div> -->
-          <div class="alert" id="alert">Thank you <span id="email"></span> for your subscription!</div>
+          <div class="alert" id="alert">
+            Thank you <span id="email"></span> for your subscription!
+          </div>
 
           <form action="" id="form" class="enterEmailForm">
             <input
@@ -595,5 +647,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./firebase.js"></script>
+    <script src="./carousel.js"></script>
   </body>
 </html>
