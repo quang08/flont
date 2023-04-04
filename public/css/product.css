@@ -22,6 +22,13 @@ body {
   background-color: #f5f5f5;
 }
 
+:root {
+  --main-text-color: white;
+  --main-green-color: #036627;
+  --sub-main-green-color: #bdd4c6;
+  --main-gray-color: rgb(143, 143, 143);
+}
+
 .alert {
   width: 95%;
   background: #036627;
@@ -250,6 +257,93 @@ nav {
   margin-top: 0;
   margin-left: 1.7vw;
   font-size: 1.7vw;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 5%;
+  padding: 0 2vw;
+}
+
+.product-detail {
+  border: 1px solid gray;
+  padding: 4.5%;
+  border-radius: 15px;
+  margin-bottom: 15%;
+  transition: transform 0.3s;
+  background-color: white;
+}
+.product-detail:hover {
+  transform: scale(1.08);
+}
+.product-detail img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.product-infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4.5% 0;
+}
+.product-des div {
+  margin: 5% 0;
+  text-align: left;
+  margin-bottom: 0.5vw;
+}
+.product-action {
+  display: flex;
+  justify-content: space-between;
+}
+.addToCart {
+  background-color: var(--main-green-color);
+  padding: 3% 10%;
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
+}
+.sub_addToCart {
+  background-color: var(--sub-main-green-color);
+  padding: 3% 10%;
+  color: black;
+  border-radius: 30px;
+  border: none;
+}
+.addToCart:active {
+  background-color: var(--main-gray-color);
+}
+.sub_addToCart:hover {
+  background-color: var(--main-green-color) !important;
+  color: var(--main-text-color);
+}
+.sub_addToCart:active {
+  background-color: var(--main-gray-color);
+}
+.markButton {
+  background-color: var(--main-text-color);
+  border: 1px solid var(--main-gray-color);
+  color: var(--main-green-color);
+  padding: 4% 5%;
+  border-radius: 30px;
+}
+.markButton:active {
+  background-color: red;
+}
+.showMoreButton {
+  background-color: var(--main-green-color);
+  padding: 1.5% 4%;
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
+}
+.showMoreButton:active {
+  background-color: var(--main-gray-color);
+  padding: 1.5% 4%;
+  color: var(--main-text-color);
+  border-radius: 30px;
+  border: none;
 }
 
 .grid-container {
@@ -559,6 +653,28 @@ nav {
   .section3-best p {
     font-size: 2vw;
     margin-bottom: 5vw;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 3%;
+  }
+
+  .product-detail {
+    border: 1px solid gray;
+    padding: 4.5%;
+    border-radius: 15px;
+    margin-bottom: 15%;
+  }
+
+  .addToCart {
+    background-color: var(--main-green-color);
+    padding: 3% 10%;
+    color: var(--main-text-color);
+    border-radius: 30px;
+    border: none;
+    font-size: 2vw;
   }
 
   .grid-container {
