@@ -446,6 +446,64 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .logo .logo-a {
+    font-family: "Pacifico", cursive;
+    font-size: 4vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .logo span {
+    font-size: 2vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin: 0 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+  }
+
+  .icon-container {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .icon-container i {
+    font-size: 1.6vw;
+  }
+
+  .cart-icon {
+    width: 2vw; /* Set the same width as the other icons */
+    height: 2vw; /* Set the same height as the other icons */
+  }
+
+  /* Styles for the shopping cart icon image */
+  .cart-icon img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+  }
+
   .icon-container {
     width: 20vw;
     display: flex;

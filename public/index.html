@@ -5,38 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/4b4f97bc2c.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
   </head>
 
   <body>
     <div class="container">
       <div class="landing">
-        <nav>
-          <div class="logo">
-            <a href="./index.html">Flont</a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="">Deals</a></li>
-            <li><a href="./html/plantShop.html">Plant Shop</a></li>
-            <li><a href="./html/plantCare.html">Plant Care</a></li>
-            <li><a href="./html/homeAndDecor.html">Home and Decor</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About us</a></li>
+        <div id="header">
+          <ul>
+            <a href="./index.html"
+              ><li class="textPaci xx_large_title filter_white">Flont</li></a
+            >
+            <li class="linkHover"><a class="filter_white" href="">Deals</a></li>
+            <li class="linkHover">
+              <a class="filter_white" href="./html/plantShop.html"
+                >Plant Shop</a
+              >
+            </li>
+            <li class="linkHover">
+              <a class="filter_white" href="./html/plantCare.html">Plant Care</a>
+            </li>
+            <li class="linkHover">
+              <a class="filter_white" href="./html/homeAndDecor.html"
+                >Home and Decor</a
+              >
+            </li>
+            <li class="linkHover">
+              <a class="filter_white" href="">Blog</a>
+            </li>
+            <li class="linkHover">
+              <a class="filter_white" href="">About us</a>
+            </li>
           </ul>
-
-          <div class="icon-container">
-            <div class="cart-icon">
-              <img src="./static/icon-cart-white.png" alt="Shopping cart" />
-            </div>
-
-            <i class="fa fa-magnifying-glass"></i>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user"></i>
-          </div>
-        </nav>
+          <ul>
+            <li class="linkHover"><i class="bi bi-cart3 sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-search sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-heart sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-person sub-title"></i></li>
+          </ul>
+        </div>
+        <div id="header_phone">
+          <a class="filter_white" href="./index.html"
+            ><div class="textPaci xx_large_title">Flont</div></a
+          >
+          <ul class="first_nav">
+            <li class="linkHover sub-title">Deals</li>
+            <li class="linkHover">
+              <a class="filter_white sub-title" href="./html/plantShop.html"
+                >Plant Shop</a
+              >
+            </li>
+            <li class="linkHover">
+              <a
+                class="filter_white sub-title"
+                class="filter_green bold"
+                href="./html/plantCare.html"
+                >Plant Care</a
+              >
+            </li>
+            <li class="linkHover">
+              <a class="filter_white sub-title" href="./html/homeAndDecor.html"
+                >Home and Decor</a
+              >
+            </li>
+            <li class="linkHover sub-title">Blog</li>
+            <li class="linkHover sub-title">About us</li>
+          </ul>
+          <ul class="second_nav">
+            <li class="linkHover"><i class="bi bi-cart3 sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-search sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-heart sub-title"></i></li>
+            <li class="linkHover"><i class="bi bi-person sub-title"></i></li>
+          </ul>
+        </div>
 
         <div class="hero">
           <h1>Welcome to Flont</h1>

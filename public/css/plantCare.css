@@ -118,6 +118,7 @@ a {
   gap: 3rem;
   align-items: center;
   padding-left: 0;
+  font-size: 1.2vw;
 }
 #Content {
   display: flex;
@@ -517,7 +518,7 @@ a {
   #header_phone .second_nav {
     list-style: none;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 5%;
     padding-left: 0;

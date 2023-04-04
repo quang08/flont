@@ -36,7 +36,7 @@ a {
   font-size: 1.2vw;
   font-weight: 900;
   display: none;
-  color:white;
+  color: white;
 }
 
 .bold {
@@ -70,63 +70,77 @@ a {
   background: white;
 }
 
-nav {
-  background-color: transparent;
-  height: 5vw; /* adjust this value to fit your navbar */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 2vw;
+.textPaci {
+  font-family: Pacifico;
 }
-
-.logo a {
-  font-family: "Pacifico", cursive;
+.xx_large_title {
   font-size: 3vw;
+}
+.title {
+  font-size: x-large;
+}
+.bold {
   font-weight: bold;
-  text-decoration: none;
-  color: black;
 }
-
-.nav-links {
+.sub-title {
+  font-size: large;
+}
+.medium-title {
+  font-size: 1.2vw;
+}
+.weight-600-title {
+  font-weight: 600;
+}
+.algin_center {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  list-style: none;
 }
-
-.nav-links li {
-  margin: 0 1vw;
+.justity_center {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+.margin_auto {
+  display: flex;
+  margin: auto;
 }
 
-.nav-links a {
-  text-decoration: none;
-  font-size: 1.2vw;
+.bold {
+  font-weight: bold;
 }
 
-.icon-container {
-  width: 20vw;
+.filter_gray {
+  color: rgb(143, 143, 143);
+}
+.filter_green {
+  color: #036627;
+}
+.filter_white {
+  color: white;
+}
+.filter_black {
+  color: black !important;
+}
+
+#header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  padding: 0 2vw;
 }
-
-.icon-container i {
+#header_phone {
+  display: none;
+}
+#header ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-left: 0;
   font-size: 1.2vw;
 }
 
-.cart-icon {
-  width: 1.5vw; /* Set the same width as the other icons */
-  height: 1.5vw; /* Set the same height as the other icons */
-}
-
-/* Styles for the shopping cart icon image */
-.cart-icon img {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Make the image fill the container */
+.linkHover:hover {
+  color: var(--main-green-color);
+  font-weight: bold;
 }
 
 .hero {
@@ -235,147 +249,77 @@ nav {
   font-size: 2.5vw;
 }
 
-@media (max-width: 768px) {
-  .icon-container {
-    width: 20vw;
+@media only screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    font-size: 10px;
+  }
+  .xx_large_title {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: large;
+  }
+  .sub-title {
+    font-size: 2vw;
+  }
+
+  .free-ship {
+    padding: 1vw;
+  }
+
+  #header {
+    display: none;
+    background-color: var(--main-text-color);
+  }
+  #header_phone {
+    display: block;
+  }
+  #header_phone div {
+    display: flex;
+    justify-content: center;
+  }
+  #header_phone .first_nav {
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    padding: 0 2vw;
+    margin-bottom: 3%;
+    font-size: 1.2vw;
   }
-  .cart-icon {
-    width: 3vw;
-    height: 3vw;
+  #header_phone .second_nav {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    padding: 0 2vw;
+    gap: 5%;
+    padding-left: 0;
+    margin-bottom: 3%;
   }
-
-  .cart-icon img {
-    width: 70%; /* Make the image fill the container */
-    height: 70%; /* Make the image fill the container */
-    margin-bottom: 0.3vw;
+  
+  .optionFooterList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 8%;
   }
-  @media only screen and (max-width: 500px) {
-    * {
-      margin: 0;
-      font-size: 10px;
-    }
-    .xx_large_title {
-      font-size: 2rem;
-    }
-    .title {
-      font-size: large;
-    }
-    .sub-title {
-      font-size: small;
-    }
-    #header {
-      display: none;
-      background-color: var(--main-text-color);
-    }
-    #header_phone {
-      display: block;
-    }
-    #header_phone div {
-      display: flex;
-      justify-content: center;
-    }
-    #header_phone .first_nav {
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 0;
-      margin-bottom: 3%;
-    }
-    #header_phone .second_nav {
-      list-style: none;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      gap: 5%;
-      padding-left: 0;
-      margin-bottom: 3%;
-    }
-    #Content {
-      width: 100%;
-    }
-    #left-content {
-      background-color: var(--main-text-color);
-      display: none;
-      position: fixed;
-      width: 50%;
-      scroll-behavior: smooth;
-      overflow: scroll;
-      height: 100%;
-      padding: 0% 3% 3% 1%;
-    }
-    #filter_icon {
-      display: block;
-    }
-    .right-content {
-      width: 100%;
-    }
-    .right-content_header {
-      width: 80%;
-    }
-    #right-content_filter_search {
-      background: url(search.svg) no-repeat scroll 5% 50%;
-      padding: 2% 0;
-      display: flex;
-      align-items: center;
-      padding-left: 10%;
-      border-radius: 20px;
-      width: 40%;
-      font-weight: 600;
-    }
-    .Search span {
-      width: 25%;
-      display: flex;
-      justify-content: space-between;
-    }
-    .sort_input {
-      display: block;
-      align-items: center;
-    }
-    .sort_input select {
-      width: 100%;
-    }
-
-    .product-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 3%;
-    }
-    .product-detail {
-      border: 1px solid gray;
-      padding: 4.5%;
-      border-radius: 15px;
-      margin-bottom: 15%;
-    }
-    .optionFooterList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 8%;
-    }
-    .optionFooterList .option {
-      margin-bottom: 5%;
-    }
-    .optionFooterList .option div {
-      margin: 8% 0;
-      color: rgb(143, 143, 143);
-      font-size: 1.2vw;
-    }
-    .optionFooterList .option .contact {
-      margin-bottom: 20%;
-      color: rgb(143, 143, 143);
-      font-size: 1.2vw;
-    }
-    .optionFooterList .option div p {
-      margin-bottom: 3%;
-      color: rgb(143, 143, 143);
-      font-size: 1.2vw;
-    }
+  .optionFooterList .option {
+    margin-bottom: 5%;
+  }
+  .optionFooterList .option div {
+    margin: 8% 0;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
+  }
+  .optionFooterList .option .contact {
+    margin-bottom: 20%;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
+  }
+  .optionFooterList .option div p {
+    margin-bottom: 3%;
+    color: rgb(143, 143, 143);
+    font-size: 1.2vw;
   }
 }
